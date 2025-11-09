@@ -57,18 +57,11 @@ You can test the API using any client like Postman or a `curl` command.
 * **Content-Type:** `application/json`
 
 ### Request Body
-Your API expects a JSON body with the following structure:
-```json
-{
-  "dealerId": "D001",
-  "vehicleId": "V101",
-  "customerName": "Arpit"
-}
 
 
 ### Example `curl` Request
 This command will send the request and save the resulting file as `invoice.pdf`.
-```bash
+
 curl -X POST http://localhost:8080/api/invoice/generate \
 -H "Content-Type: application/json" \
 -d '{
@@ -91,6 +84,14 @@ curl -X POST http://localhost:8080/api/invoice/generate \
 
 * **Lombok:**
   * **Why:** Reduces boilerplate code significantly. By using annotations like `@Data`, `@Builder`, and `@RequiredArgsConstructor`, we keep our model and service classes clean, readable, and focused on business logic rather than repetitive Java syntax.
-<img width="2000" height="1556" alt="image" src="https://github.com/user-attachments/assets/7db42ce5-0086-4eb3-bbd6-ac078e138ee2" />
-<img width="752" height="1056" alt="image" src="https://github.com/user-attachments/assets/7d67b46f-1e14-4adb-a1c8-d92661613fad" />
+
+    Your API expects a JSON body with the following structure:
+```json
+{
+  "dealerId": "D001",
+  "vehicleId": "V101",
+  "customerName": "Arpit"
+} 
+
+
 
