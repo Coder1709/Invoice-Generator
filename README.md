@@ -65,7 +65,6 @@ Your API expects a JSON body with the following structure:
   "customerName": "Arpit"
 }
 
-*(Note: The `dealerId` and `vehicleId` are used to look up mock data in the in-memory repositories.)*
 
 ### Example `curl` Request
 This command will send the request and save the resulting file as `invoice.pdf`.
